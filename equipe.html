@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE - 303</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="JAVASCRIPT/trunac.js"></script>
+    <link rel="stylesheet" href="CSS/cssrdr2.css">
+    <link rel="stylesheet" href="CSS/cssrdr2_equipe.css">
+</head>
+<body>
+
+    <div class="burger-menu" onclick="toggleSubMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="submenu" class="submenu">
+        <ul>
+            <li><a href="index.html">Le Journal d'Arthur</a></li>
+            <li><a href="projet_en_video.html">Le projet en vidéo</a></li>
+            <li><a href="equipe.html">L'équipe</a></li>
+            <li><a href="remerciments_credits_sources.html">Remerciment | Crédits | Sources</a></li>
+        </ul>
+    </nav>
+
+    <div class="haut_de_page">
+        <img class="LOGORDR2" src="PHOTOS/Red_Dead_Redemption_2_Logo.png" alt="Logo_RDR2">
+        <p class="problematique">L'équipe</p>
+    </div>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="PHOTOS/Amandine.jpg" alt="Membre Amandine">
+            <div class="member-info">
+                <h3>CLARET Amandine</h3>
+                <p>Rôle: Développeur</p>
+                <button class="more-info-btn">En savoir plus</button>
+                <div class="more-info">
+                    <p>Developpeuse pas fullstack, ni stack. (Maxi-fraude) Aime son chien le plus beau de l'univers. (au cas ou)</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="PHOTOS/Ludner.jpg" alt="Membre Ludner">
+            <div class="member-info">
+                <h3>FLEURY Ludner</h3>
+                <p>Rôle: Designer</p>
+                <button class="more-info-btn">En savoir plus</button>
+                <div class="more-info">
+                    <p>Si tu abandonnes tes rêves, ils ne se réaliseront pas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="PHOTOS/Jalil.jpg" alt="Membre Jalil">
+            <div class="member-info">
+                <h3>GALIEGUE Jalil</h3>
+                <p>Rôle: Designer</p>
+                <button class="more-info-btn">En savoir plus</button>
+                <div class="more-info">
+                    <p>1m83, plutôt beau gosse, se fait souvent arreter dans dans la rue.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="PHOTOS/Thomas.jpg" alt="Membre Thomas">
+            <div class="member-info">
+                <h3>HARDY Thomas</h3>
+                <p>Rôle: Designer</p>
+                <button class="more-info-btn">En savoir plus</button>
+                <div class="more-info">
+                    <p>Un homme simples aux goûts prononcés.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleSubMenu() {
+            const submenu = document.getElementById("submenu");
+            const burgerMenu = document.querySelector(".burger-menu");
+            submenu.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+        }
+
+        document.querySelectorAll('.more-info-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const moreInfo = button.nextElementSibling;
+                if (moreInfo.style.display === 'block') {
+                    moreInfo.style.display = 'none';
+                    button.textContent = 'En savoir plus';
+                } else {
+                    moreInfo.style.display = 'block';
+                    button.textContent = 'Réduire';
+                }
+            });
+        });
+    </script>
+
+    </body>
+    </html>

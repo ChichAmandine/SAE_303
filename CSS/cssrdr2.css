@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    background-color: #120003;
+}
+
+#journal {
+    width: 1400px !important;
+    height: 900px !important;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#journal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#journal .turn-page-wrapper:nth-child(even) .page {
+    background-color: pink;
+    width: 400px;
+    background-image: linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    box-shadow: inset 0 0 5px #666;
+}
+
+.page {
+    overflow: hidden;
+    position: relative;
+}
+
+#journal .turn-page-wrapper:nth-child(odd) .page {
+    background-color: white;
+    width: 400px;
+    box-shadow: inset 0 0 5px #666;
+    background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.couverture {
+    background: #ccc !important;
+    color: #333;
+    box-shadow: inset 0 0 5px #666;
+    font-weight: bold;
+}
+
+.barre_séparation {
+    width: 75%;
+    height: 5px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.haut_de_page {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.bas_de_page {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* EFFET POUR LE TITRE DU SITE */
+
+.problematique {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+.problematique:hover {
+    color: #ffffff;
+}
+
+.LOGORDR2 {
+    width: 350px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.LOGORDR2:hover {
+    transform: scale(1.1);
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.box {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* MENU BURGER DU SITE */
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; /* Positionnement du burger */
+    left: 20px; /* Positionnement du burger */
+    z-index: 1000;
+}
+
+.burger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #FFF;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menu.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Style du sous-menu déroulant */
+.submenu {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-height: 0; /* Masquer par défaut */
+    overflow: hidden;
+    position: absolute;
+    top: 50px;  /* Positionne le sous-menu juste en dessous du menu burger */
+    left: 0;    /* Aligné à gauche */
+    background-color: #120003;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-radius: 5px;
+    transition: max-height 0.5s ease-out;
+}
+
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.submenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.submenu ul li a:hover {
+    color: #e80404; /* Couleur hover pour les liens */
+}
+
+/* Lorsque le sous-menu est actif, il se déploie */
+.submenu.active {
+    max-height: 500px; /* Déploie le sous-menu */
+}

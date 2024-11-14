@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE - 303</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="JAVASCRIPT/trunac.js"></script>
+    <link rel="stylesheet" href="CSS/cssrdr2.css">
+</head>
+<body>
+
+    <div class="burger-menu" onclick="toggleSubMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="submenu" class="submenu">
+        <ul>
+            <li><a href="index.html">Le Journal d'Arthur</a></li>
+            <li><a href="projet_en_video.html">Le projet en vidéo</a></li>
+            <li><a href="equipe.html">L'équipe</a></li>
+            <li><a href="remerciments_credits_sources.html">Remerciment | Crédits | Sources</a></li>
+        </ul>
+    </nav>
+
+    <div class="haut_de_page">
+        <img class="LOGORDR2" src="PHOTOS/Red_Dead_Redemption_2_Logo.png" alt="Logo_RDR2">
+        <p class="problematique">"Les chiffres autour du jeu à succès de Rockstar Games"</p>
+    </div>
+
+        <div id="journal">
+            <div class="couverture"> Turn.js </div>
+            <div class="couverture"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page sommaire"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 1"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/9f76f5/5828968335/il_fullxfull.5828968335_6frf.jpg" alt="Page 2"></div>
+            <div class="page"><img src="https://i.etsystatic.com/21623528/r/il/08b07e/5653883026/il_fullxfull.5653883026_oce2.jpg" alt="Page 3"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 4"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 5"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 6"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 7"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 8"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 9"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 10"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 11"></div>
+            <div class="page"><img src="https://i.etsystatic.com/19424222/r/il/fe7d9c/5193077430/il_fullxfull.5193077430_l0r9.jpg" alt="Page 12"></div>
+            <div class="couverture">Turn.js</div>
+        </div>
+
+        <script type="text/javascript">
+            function toggleSubMenu() {
+                const submenu = document.getElementById("submenu");
+                const burgerMenu = document.querySelector(".burger-menu");
+                submenu.classList.toggle("active");
+                burgerMenu.classList.toggle("active");
+}
+    
+            $(document).ready(function () {
+                console.log(typeof $.fn.turn);
+                $("#journal").turn({width: 800, height: 600, autoCenter: true});
+            });
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE - 303</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="JAVASCRIPT/trunac.js"></script>
+    <link rel="stylesheet" href="CSS/cssrdr2.css">
+    <link rel="stylesheet" href="CSS/cssrdr2_remerciments.css">
+</head>
+<body>
+
+    <div class="burger-menu" onclick="toggleSubMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="submenu" class="submenu">
+        <ul>
+            <li><a href="index.html">Le Journal d'Arthur</a></li>
+            <li><a href="projet_en_video.html">Le projet en vidéo</a></li>
+            <li><a href="equipe.html">L'équipe</a></li>
+            <li><a href="remerciments_credits_sources.html">Remerciment | Crédits | Sources</a></li>
+        </ul>
+    </nav>
+
+    <div class="haut_de_page">
+        <img class="LOGORDR2" src="PHOTOS/Red_Dead_Redemption_2_Logo.png" alt="Logo_RDR2">
+        <p class="problematique">Remerciment | Crédits | Sources</p>
+    </div>
+
+    <div class="container">
+        <h1>SAE 303</h1>
+        <p>"Les chiffres autour du jeu à succès de Rockstar Games"</p>
+        <p>Un projet mené par :</p>
+
+            <li>CLARET Amandine</li>
+            <li>FLEURY Ludner</li>
+            <li>GALIEGUE Jalil</li>
+            <li>HARDY Thomas</li>
+
+        <p>Special thanks :</p>
+
+            <li>Mr. JEAN-LOUIS</li>
+            <li>Mr. LINARDI</li>
+            <li>Mr. ROCH</li>
+            <li>Mr. ChatGPT (quand c'était duuuur)</li>
+
+            <p>Sources :</p>
+
+                <li><a href="https://www.rdr2.fr/" target="_blank">RDR2.fr</a></li>
+                <li><a href="https://reddead.fandom.com/fr/wiki/Red_Dead_Wiki" target="_blank">REDDEAD.FANDOM.com</a></li>
+                <li>[SOURCES A AJOUTER !!!!!!!]</li>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleSubMenu() {
+            const submenu = document.getElementById("submenu");
+            const burgerMenu = document.querySelector(".burger-menu");
+            submenu.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+        }
+
+        function toggleSources() {
+            const sourceList = document.getElementById('sourceList');
+            sourceList.style.display = sourceList.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+    </body>
+    </html>
