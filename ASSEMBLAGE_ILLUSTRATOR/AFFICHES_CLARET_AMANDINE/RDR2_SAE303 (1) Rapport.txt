@@ -1,0 +1,49 @@
+Rapport d'assemblage
+
+-----------------------------------------------------------------------------
+Document :
+Nom : RDR2_SAE303 (1).ai
+Mode : Couleurs RVB
+Profil colorimétrique : Sans
+Unité : centimètres
+Dimensions : 19 cm x 25 cm
+Afficher les images en mode Tracés : INACTIF
+Mettre en évidence les polices substituées : INACTIF
+Mettre en évidence les glyphes substitués : INACTIF
+Conserver le caractère modifiable du texte
+Simuler le papier couleur : INACTIF
+
+-----------------------------------------------------------------------------
+Objets en tons directs :
+
+-----------------------------------------------------------------------------
+Polices manquantes :SANS
+
+-----------------------------------------------------------------------------
+Polices protégées non assemblées :SANS
+
+-----------------------------------------------------------------------------
+Polices :
+MS Outlook (OTF)
+Myriad Pro (OTF)
+Mongolian Baiti (OTF)
+One Dance Bold (TrueType)
+
+-----------------------------------------------------------------------------
+Polices incorporées :
+SANS
+
+-----------------------------------------------------------------------------
+Liens manquants :
+SANS
+
+-----------------------------------------------------------------------------
+Images liées :
+
+C:\Users\Amandine\Desktop\IMG_1324.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 56645K, 5000 x 3867 pixels
+Dimensions : 2580,577 x 2033,29 points 
+Résolution : 139,504 x 136,933 pixels par pouce
