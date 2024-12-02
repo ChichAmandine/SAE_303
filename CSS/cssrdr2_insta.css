@@ -5,6 +5,8 @@
 }
 
 .planche {
-    width: 29,53rem;
-    height: 22,5rem ;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+  
 }
