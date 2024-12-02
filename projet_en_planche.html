@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE - 303</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="JAVASCRIPT/trunac.js"></script>
+    <link rel="stylesheet" href="CSS/cssrdr2.css">
+    <link rel="stylesheet" href="CSS/cssrdr2_insta.css">
+</head>
+<body>
+
+    <div class="burger-menu" onclick="toggleSubMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav id="submenu" class="submenu">
+        <ul>
+            <li><a href="index.html">Le Journal d'Arthur</a></li>
+            <li><a href="projet_en_video.html">Le projet version Instagram</a></li>
+            <li><a href="projet_en_planche.html">Le projet en planches</a></li>
+            <li><a href="equipe.html">L'équipe</a></li>
+            <li><a href="remerciments_credits_sources.html">Remerciment | Crédits | Sources</a></li>
+        </ul>
+    </nav>
+
+    <div class="haut_de_page">
+        <a href="index.html">
+            <img class="LOGORDR2" src="PHOTOS/Red_Dead_Redemption_2_Logo.png" alt="Logo_RDR2">
+        </a>
+        <p class="problematique">Le projet format planches</p>
+    </div>
+
+        <img class="planche" src="PAGES/PAGE1_LUDNER.jpg" alt="Planche Ludner">
+        <img class="planche" src="PAGES/PAGE2_LUDNER.jpg" alt="Planche2 Ludner">
+        <img class="planche" src="PAGES/PAGE3_JALIL.jpg" alt="Planche Jalil1">
+        <img class="planche" src="PAGES/PAGE4_JALIL.jpg" alt="Planche2 Jalil2">
+        <img class="planche" src="PAGES/PAGE5_THOMAS.png" alt="Planche Thomas">
+        <img class="planche" src="PAGES/PAGE6_THOMAS.png" alt="Planche2 Thomas">
+        <img class="planche" src="PAGES/PAGE7_AMANDINE.jpg" alt="Planche Amandine">
+        <img class="planche" src="PAGES/PAGE8_AMANDINE.jpg" alt="Planche1 Amandine">
+
+    <script type="text/javascript">
+        function toggleSubMenu() {
+            const submenu = document.getElementById("submenu");
+            const burgerMenu = document.querySelector(".burger-menu");
+            submenu.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+        }
+    </script>
+
+    </body>
+    </html>

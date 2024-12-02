@@ -1,0 +1,45 @@
+Rapport d'assemblage
+
+-----------------------------------------------------------------------------
+Document :
+Nom : affiche format.ai
+Mode : Couleurs CMJN
+Profil colorimétrique : Coated FOGRA39 (ISO 12647-2:2004)
+Unité : centimètres
+Dimensions : 19 cm x 25 cm
+Afficher les images en mode Tracés : INACTIF
+Mettre en évidence les polices substituées : INACTIF
+Mettre en évidence les glyphes substitués : INACTIF
+Conserver le caractère modifiable du texte
+Simuler le papier couleur : INACTIF
+
+-----------------------------------------------------------------------------
+Objets en tons directs :
+
+-----------------------------------------------------------------------------
+Polices manquantes :SANS
+
+-----------------------------------------------------------------------------
+Polices protégées non assemblées :SANS
+
+-----------------------------------------------------------------------------
+Polices :
+Myriad Pro (OTF)
+Munson (OTF)
+Stanford Breath Regular (OTF)
+CabbagetownStd (TrueType)
+IndiraK (TrueType)
+
+-----------------------------------------------------------------------------
+Polices incorporées :
+SANS
+
+-----------------------------------------------------------------------------
+Liens manquants :
+
+C:\Users\jgali\Downloads\old-camera-drawing-13.png
+Type : Autre
+
+-----------------------------------------------------------------------------
+Images liées :
+SANS
