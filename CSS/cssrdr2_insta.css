@@ -1,32 +1,29 @@
-.gallery {
-    text-align: center;
-    margin: 50px auto;
-    padding: 20px;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.gallery h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.gallery-container {
+.image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    justify-items: center;
+    gap: 10px;
+    max-width: 90%;
+    margin: auto;
 }
 
-.gallery-container img {
+.image-grid img {
     width: 100%;
-    max-width: 200px;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.gallery-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+.image-grid img:hover {
+    transform: scale(1.05);
 }
